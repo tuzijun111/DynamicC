@@ -3,7 +3,7 @@
 
 SimFunction class contains all the used similarity functions.
 
-The Cluster class contains Navie, GreedyDB(Hill-climbing) and incremental DB(Greedy) DBSCAN and k-means methods. 
+The Cluster class contains Navie, GreedyDB(Hill-climbing), incremental DB(Greedy), DBSCAN and k-means methods. 
 
 The data preprocess codes are in DataPro class. And the Evaluate class is used to measure the clustering results.
 
