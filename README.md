@@ -1,5 +1,4 @@
-# Dynamic-Record-Linkage
-Dynamic Record Linkage
+# Dynamic-Clustering
 
 
 SimFunction class contains all the used similarity functions.
