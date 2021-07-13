@@ -11,4 +11,4 @@ The updates processing is controled by the DSframe class.
 
 The ML model is built in python, and we call python script in the java programs which are in the MLbased class.
 
-All the experiments are run in the main function of the Synthetic and Test classes.
+All the experiments are run in the main function of the Synthetic and Test classes. While the main function is about DynamicC, the other methods are tested in the main function of the Test class.
