@@ -6,7 +6,7 @@ import java.util.Arrays;
 
 public class Synthetic {
     public static void main(String[] args) throws IOException, ClassNotFoundException {
-        /*
+        
 
         ArrayList<ArrayList<String>> abc = new ArrayList<ArrayList<String>>();
         abc= DataPro.CsvData("/Users/binbingu/Documents/Tool/febrl-0.4.2/dsgen/100.csv");
@@ -105,7 +105,7 @@ public class Synthetic {
 //        }
 
 
-         */
+         
 
     }
 
