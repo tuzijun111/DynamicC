@@ -3,13 +3,14 @@ package algorithm;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Hashtable;
 
 public class Synthetic {
     public static void main(String[] args) throws IOException, ClassNotFoundException {
-        
+
 
         ArrayList<ArrayList<String>> abc = new ArrayList<ArrayList<String>>();
-        abc= DataPro.CsvData("/Users/binbingu/Documents/Tool/febrl-0.4.2/dsgen/100.csv");
+        abc= DataPro.CsvData("/Users/binbingu/Documents/Tool/febrl-0.4.2/dsgen/10000.csv", 1);
         //abc = Test.DataPro();
         //System.out.println("abc " + abc.size());
 
@@ -52,6 +53,12 @@ public class Synthetic {
 
         ArrayList<Integer> ttt = new ArrayList<Integer>();
 
+        ArrayList<Hashtable> adj = DataPro.ReadGraph("/Users/binbingu/Documents/Datasets/amazon-samples/Matrix/AdjGraph1K.txt");
+//        ArrayList<Hashtable> adj = DataPro.ReadGraph("/Users/binbingu/Documents/Datasets/3D_Road/Matrix/AdjGraph.txt");
+//        ArrayList<Hashtable> adj = DataPro.ReadGraph("/Users/binbingu/Documents/Datasets/Cora/Matrix/AdjGraph1K.txt");
+//        ArrayList<Hashtable> adj = DataPro.ReadGraph("/Users/binbingu/Documents/Datasets/Music Brzinz/Matrix/AdjGraph1K.txt");
+//        ArrayList<Hashtable> adj = DataPro.ReadGraph("/Users/binbingu/Documents/Codes/Write-test/Synthetic/Adjacent-matrix1000.txt");
+
         long startTime = System.currentTimeMillis();
 
         //Test1.Count(ad);
@@ -89,7 +96,7 @@ public class Synthetic {
         //System.out.println("Current Score: "+ Cluster.ScoreForCorr(inter, ad));
         //System.out.println("Current DBindex: " + Cluster.DBindex(ClusteringResult3, ad));
         //System.out.println("Current DBindex: " + Cluster.DBindex(ClusteringResult1, ad));
-        System.out.println("Current DBindex: "+ Cluster.DBindex(inter, ad));
+        System.out.println("Current DBindex: "+ Cluster.DBindex(inter, adj));
         //System.out.println(ClusteringResult4);
 
 
@@ -105,7 +112,7 @@ public class Synthetic {
 //        }
 
 
-         
+
 
     }
 
