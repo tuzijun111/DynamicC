@@ -7,7 +7,7 @@ The Cluster class contains Navie, GreedyDB(Hill-climbing), incremental DB(Greedy
 
 The data preprocess codes are in DataPro class. And the Evaluate class is used to measure the clustering results.
 
-The updates processing is controled by the DSframe class.
+The update processing is controled by the DSframe class.
 
 The ML model is built in python, and we call python script in the java programs which are in the MLbased class.
 
